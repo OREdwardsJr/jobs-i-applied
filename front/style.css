@@ -1,0 +1,90 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#full-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #d2c6ae;
+}
+
+#top-nav {
+    height: 10vh;
+    background-color: cadetblue;
+}
+
+#main-content {
+    height: 85vh;
+    display: flex;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+#main-content #left-content {
+    width: 30vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-content #left-content #img-area {
+    height: 45%;
+    display: grid;
+    padding: 1vh;
+}
+
+#main-content #left-content #img-area #profile-img {
+    height: 100%;
+    background-color: black;
+    border-radius: 110px;
+    place-self: center;
+    width: 61%;
+}
+
+#main-content #left-content #user-info {
+    height: 75%;
+    /*! background-color: blanchedalmond; */
+    padding: 2vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2vh;
+}
+
+#main-content #left-content #user-info #dashboard-user {
+    display: grid;
+    height: 20%;
+}
+
+#main-content #left-content #user-info #dashboard-user h1 {
+    place-self: center;
+}
+
+#main-content #left-content #user-info #user-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 80%;
+}
+
+#main-content #left-content #user-info #user-stats #main-content #right-content {
+    width: 65vw;
+    background-color: brown;
+    margin-right: 5vw;
+}
+
+#footer {
+    height: 5vh;
+    background-color: cadetblue;
+}
+
+#main-content #right-content {
+    width: 70vw;
+    margin-right: 5vw;
+    display: flex;
+    background-color: blanchedalmond;
+}
