@@ -1,0 +1,80 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    --primary-color: #53b6dd;
+    --background-color: #feffff;
+    --accent-color: #e0f7fbb0;
+}
+
+#main-container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: grid;
+}
+
+#main-container #top-nav #title-div {
+    height: 10vh;
+    border: 1px solid var(--accent-color);
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: end;
+    width: 100vw;
+    box-shadow: 0rem 1rem 1.2rem 0rem #ecececb0;
+}
+
+#main-container #top-nav #title-div a {
+    text-decoration: none;
+    color: var(--primary-color);
+    margin-left: 5vw;
+}
+
+#main-container #main-content {
+    height: 90vh;
+    display: grid;
+}
+
+#main-container #main-content #login-container {
+    height: 50vh;
+    border: 1px solid #1c627d38;
+    width: 22vw;
+    place-self: center;
+    border-radius: 25px;
+    box-shadow: 0.4rem 0.4rem 1rem 0rem #0000001f;
+    display: grid;
+}
+
+#main-container #main-content #login-container #login-content {
+    place-self: center;
+    width: 75%;
+    height: 75%;
+    display: grid;
+    place-content: center;
+    gap: 4vh;
+}
+
+#main-container #main-content #login-container #login-content #user-entries {
+    display: grid;
+}
+
+#main-container #main-content #login-container #login-content #user-entries input {
+    margin-bottom: 1vh;
+    height: 3vh;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+#main-container #main-content #login-container #login-content #user-submits {
+    display: flex;
+    gap: 2vw;
+}
+
+#main-container #main-content #login-container #login-content #user-submits button {
+    background-color: var(--primary-color);
+    height: 5vh;
+    width: 8.5vw;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0.25em 0.25rem 0.1rem 0rem #e6e6e6;
+    color: white;
+}

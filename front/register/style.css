@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    --primary-color: #53b6dd;
+    --background-color: #feffff;
+    --accent-color: #e0f7fbb0;
+}
+
+#full-container {
+    background-color: var(--background-color);
+    width: 100vw;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#full-container .inner-containers {
+    display: flex;
+    place-items: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    height: min-content;
+    color: var(--primary-color);
+}
+
+#full-container #top-nav {
+    height: 10vh;
+    border: 1px solid var(--accent-color);
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    z-index: 1;
+    box-shadow: 0rem 1rem 1.2rem 0rem #ecececb0;
+    position: relative;
+}
+
+#full-container #top-nav #title-div a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+#full-container #top-nav #title-div #main-title {
+    font-size: x-large;
+}
+
+#full-container #top-nav #nav-bar {
+    position: absolute;
+    right: 0px;
+    gap: 3vw;
+}
+
+#full-container #top-nav #nav-bar a {
+    text-decoration: none;
+    color: var(--primary-color);
+
+}
+
+#full-container #top-nav #nav-bar a :hover {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+#full-container #top-nav #nav-bar button {
+    height: 5vh;
+    width: 8vw;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0.2rem 0.2rem 0.3rem 0rem #c5dde6;
+    color: white;
+    cursor: pointer;
+}
+
+#full-container #main-content {
+    display: grid;
+    place-content: center;
+    height: 90vh;
+    width: 100vw;
+}
+
+#full-container #main-content #main-content-container {
+    display: flex;
+    height: 70vh;
+    width: 75vw;
+    gap: 5vw;
+}
+
+#full-container #main-content #main-content-container #left-content-container {
+    display: grid;
+    border: black;
+    width: 40%;
+    place-content: first baseline;
+}
+
+#full-container #main-content #main-content-container #left-content-container h1 {
+    font-size: xx-large;
+    height: min-content;
+}
+
+#full-container #main-content #main-content-container #left-content-container span {
+    color: var(--primary-color)
+}
+
+#full-container #main-content #main-content-container #right-content-container {
+    display: grid;
+    justify-content: center;
+    width: 60%;
+}
+
+#full-container #main-content #main-content-container #right-content-container #form {
+    height: 66vh;
+    width: 40vw;
+    border: 1px solid #0000000a;
+    border-radius: 10px;
+    box-shadow: 0rem 0.25rem 1rem 0rem #00000003;
+    display: grid;
+}
+
+#full-container #main-content #main-content-container #right-content-container #form #content {
+    height: 80%;
+    width: 80%;
+    border: black;
+    display: grid;
+    place-self: center;
+}
+ 
+#full-container #main-content #main-content-container #right-content-container #form #content input {
+    border: none; 
+    border-bottom: 1px solid #53b6dd;
+    margin-bottom: 1vh;
+    /*! width: 85%; */
+}
+
+#full-container #main-content #main-content-container #right-content-container #form #content label {
+    font-size: small;
+}
+
+#full-container #main-content #main-content-container #right-content-container #form #content button {
+    text-align: center;
+    color: var(--primary-color);
+    background-color: transparent;
+    border: none;
+    width: min-content;
+    font-size: xx-large;
+    place-self: center;
+}
+
+#full-container #main-content #main-content-container #right-content-container #form #content button:hover {
+    cursor: pointer;
+}
